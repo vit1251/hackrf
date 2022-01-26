@@ -2,6 +2,8 @@ package hackrf
 
 /*
 #cgo windows LDFLAGS: -lhackrf -lusb-1.0 -L.
+#cgo linux LDFLAGS: -lhackrf -lusb-1.0 -L.
+#cgo linux CFLAGS: -I.
 #include "hackrf.h"
 
 extern void go_callback(hackrf_transfer);
