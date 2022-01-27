@@ -5,7 +5,7 @@ package hackrf
 #cgo linux CFLAGS: -I/usr/local/include/libhackrf
 #include "hackrf.h"
 
-extern void go_callback(hackrf_transfer);
+extern void go_callback(hackrf_transfer* transfer);
 hackrf_sample_block_cb_fn get_go_cb() {
 	return (hackrf_sample_block_cb_fn)(go_callback);
 }
