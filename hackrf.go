@@ -177,7 +177,7 @@ func (h HackRF) Version() (str string, err error) {
 	return str, err
 }
 
-type CallbackFunc func([]int8) int
+type CallbackFunc func([]uint8) int
 
 func (h *HackRF) StartRX(callback CallbackFunc) error {
 	localCallback = callback
