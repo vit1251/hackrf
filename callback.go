@@ -1,10 +1,10 @@
 package hackrf
 
-// #cgo windows CFLAGS: -I.
-// #cgo windows LDFLAGS: -lhackrf -L.
-// #cgo linux LDFLAGS: -lhackrf -lusb-1.0 -L.
-// #cgo linux CFLAGS: -I.
-// #include "hackrf.h"
+/*
+#cgo linux LDFLAGS: -lhackrf -lusb-1.0 -L.
+#cgo linux CFLAGS: -I/usr/local/include/libhackrf
+#include "hackrf.h"
+*/
 import "C"
 import "unsafe"
 
